@@ -35,9 +35,8 @@ function Wishlist() {
     </Card>
           </Col>
         )):<div style={{height:'60vh'}} className='w-100 d-flex flex-column justify-content-center align-items-center'>
-          <img style={{height:'250px'}} src="https://media2.giphy.com/media/fscIxPfKjPyShbwUS5/giphy.gif?cid=6c09b9521b4b7adc2ede5194a30481a1994f52968b0d1f9d&rid=giphy.gif&ct=s" alt="" />
           <h3 className='fw-bolder text-dark'>Wishlist is Empty</h3>
-          <Link style={{textDecoration:'none'}} className='btn btn-warning rounded mt-3' to={'/'}>Back to Home</Link>
+          <Link style={{textDecoration:'none'}} className='btn btn-dark rounded mt-3' to={'/'}>Back to Home</Link>
         </div>
         }
       </Row>

@@ -11,10 +11,10 @@ function Footer() {
             className='fs-5'
             style={{textDecoration:"none", color:'black'}}>
            <i class="fa-solid fa-truck-fast"></i>  
-             E-CART
+            Teerex
             </Link>
-         <h6 className='mt-2'>Designed and built with all the love in the world by the E-Cart team with the help of our contributors.</h6>
-         <h6>Code licensed E-Cart team, docs CC BY 3.0.</h6>
+         <h6 className='mt-2'>Designed and built with all the love in the world by the Teerex team with the help of our contributors.</h6>
+         <h6>Code licensed Teerex team, docs CC BY 3.0.</h6>
          <p>Currently v1.0.0.</p>
          </div>
          <div className="link d-flex flex-column">
@@ -33,7 +33,7 @@ function Footer() {
           <h4>Contact Us</h4>
           <div className='d-flex'>
             <input type="text" className='form-control ' placeholder='Enter Email ID' />
-            <button className='btn btn-warning'>Subscribe</button>
+            <button className='btn btn-dark'>Subscribe</button>
           </div>
           <div className=' mt-3 d-flex justify-content-evenly' style={{width: '200px'}}>
           <Link to={""}  style={{textDecoration:"none", color:'black', fontSize:'20px'}}><i class="fa-brands fa-facebook-f"></i></Link>

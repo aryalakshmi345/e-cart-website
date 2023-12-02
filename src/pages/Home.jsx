@@ -13,18 +13,19 @@ function Home() {
     <Row className='m-5' style={{marginTop: "100px"}}>
      {  
      data?.length>0?data?.map((product,index)=>(
-      <Col key={index} className='mt-5' sm={12} md={6} lg={4} xl={3}>
-      <Card className='shadow rounded' style={{ width: '18rem', height:'29rem' }}>
+      <Col key={index} className='mt-5' sm={12} md={6} lg={4} xl={4}>
+      <Card className='shadow rounded' style={{ width: '20rem', height:'29rem' }}>
       <Card.Img variant="top" height={'200px'} src={product?.thumbnail} />
       <Card.Body>
         <Card.Title>{product?.title}</Card.Title>
         <Card.Text>
-          <p>{product?.description.slice(0,50)}...</p>
-          <h5>$ {product?.price}</h5>
+          <h6>Brand: {product.brand}</h6>
+          <h5>$ {product?.price} </h5>
+          <span>{product.discountPercentage}% discount</span>
         </Card.Text>
        <div className='d-flex justify-content-between'>
           <Button onClick={()=>dispatch(addToWishlist(product))} className='btn btn-light'><i class="fa-solid fa-heart text-danger fa-2x"></i></Button>
-          <Button onClick={()=>dispatch(addToCart(product))} className='btn btn-light'><i class="fa-solid fa-cart-shopping fa-2x text-warning"></i></Button>
+          <Button onClick={()=>dispatch(addToCart(product))} className='btn btn-light'><i class="fa-solid fa-cart-shopping fa-2x text-dark"></i></Button>
        </div>
       </Card.Body>
     </Card>
